@@ -49,7 +49,7 @@ x = stars[star];
 for(let indeX of star) {
   xy = indeX;
 }
-console.log(x + " " + Number(xy-1+2));
+console.log(x + ", " + Number(xy-1+2));
 }
 // end of 2nd example. This took me like 3 hours to figure out, I'd seen the example of nesting
 // "of" and "in" loops before in my studies, but it was with an object. It took some thinking
@@ -61,15 +61,30 @@ console.log(x + " " + Number(xy-1+2));
 // adding concatenates, not adds, so I subtracted then added to get the desired result, while
 // forcing that variable into a number value. 
 // How could I have done this differently? Thanks!
- 
+  
 // 3. While loops  
 console.log('---- 3. While loop ----');
 
 // 3.a. TODO: Write a while loop to console.log each star in the 'stars' array
 console.log('Some stars using while:');
+let h = 0;
+ while(h < stars.length) {
+  console.log("Using 'while':",stars[h] + " " + stars.indexOf(stars[h]));
+   h++;
+  
+}
 
 // 3.b. TODO: Write a while loop to console.log the numbers from 0 to 5
 console.log('count from 0 to 5');
-
+let zero = 0;
+let max = 5;
+while(zero <= max) {
+console.log(zero++)
+}
 // 3.c. TODO: Write a while loop to console.log the numbers from 10 to 5
 console.log('count backwards from 10 to 5');
+let fiver = 5;
+let tenner = 10;
+while(tenner >= fiver) {
+  console.log(tenner--)
+}
