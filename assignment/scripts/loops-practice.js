@@ -86,5 +86,5 @@ console.log('count backwards from 10 to 5');
 let fiver = 5;
 let tenner = 10;
 while(tenner >= fiver) {
-  console.log(tenner--)
+  console.log(tenner--);
 };
